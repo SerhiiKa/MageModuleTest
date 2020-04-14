@@ -1,0 +1,12 @@
+<div class="content-wrapper">
+    <?php if ($block->getName()) : ?>
+        <p>Name: <?= $block->getName(); ?></p>
+    <?php endif;
+    if ($block->getLastName()) : ?>
+        <p>Last Name: <?= $block->getLastName(); ?></p>
+    <?php endif; ?>
+
+    <a href="<?= $block->generateURL() ?>">Link to JSON controller</a>
+
+</div>
+
